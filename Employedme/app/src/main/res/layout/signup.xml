@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:onClick="onSignUpClick"
+    android:background="@android:color/holo_blue_light"
+    android:clickable="true">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textColor="@color/background_floating_material_light"
+        android:ems="10"
+        android:id="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:layout_alignEnd="@+id/textView4" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/background_floating_material_light"
+        android:ems="10"
+        android:id="@+id/email"
+        android:layout_below="@+id/name"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp"
+        android:layout_alignEnd="@+id/name" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textColor="@color/background_floating_material_light"
+        android:ems="10"
+        android:id="@+id/Luname"
+        android:layout_below="@+id/email"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp"
+        android:layout_alignEnd="@+id/email" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign"
+        android:id="@+id/bsignup"
+        android:onClick="onSignUpClick"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff050602"
+        android:textColorLink="#ff000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/background_floating_material_light"
+        android:text="@string/name"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/background_floating_material_light"
+        android:text="@string/email"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/name"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/background_floating_material_light"
+        android:text="@string/user"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/email"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/background_floating_material_light"
+        android:text="@string/confirmpass"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/Luname"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="79dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/background_floating_material_light"
+        android:text="@string/pass"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/Luname"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="@color/background_floating_material_light"
+        android:ems="10"
+        android:id="@+id/Lpass"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/background_floating_material_light"
+        android:text="@string/con"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/cpass"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="@color/background_floating_material_light"
+        android:text="@string/emptyString9"
+        android:ems="10"
+        android:id="@+id/cpass"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textColor="@color/background_floating_material_light"
+        android:text="@string/emptyString10"
+        android:ems="10"
+        android:id="@+id/bcontact"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/cpass" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/background_floating_material_light"
+        android:text="@string/emptyString18"
+        android:id="@+id/bAge"
+        android:layout_alignTop="@+id/k"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_toEndOf="@+id/textView17" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/background_floating_material_light"
+        android:text="@string/emptyString19"
+        android:id="@+id/k"
+        android:layout_toEndOf="@+id/bsignup"
+        android:layout_alignTop="@+id/textView17" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/background_floating_material_light"
+        android:text="@string/citi"
+        android:id="@+id/textView10"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/textView18" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/background_floating_material_light"
+        android:inputType="textPersonName"
+        android:text="@string/emptyString11"
+        android:ems="10"
+        android:id="@+id/bcity"
+        android:layout_above="@+id/email"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/background_floating_material_light"
+        android:text="Work Field"
+        android:id="@+id/textView13"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignStart="@+id/k" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textColor="@color/background_floating_material_light"
+        android:ems="10"
+        android:id="@+id/breqwork"
+        android:layout_above="@+id/Luname"
+        android:layout_toEndOf="@+id/email"
+        android:text="@string/emptyString13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/background_floating_material_light"
+        android:text="Servant Field"
+        android:id="@+id/textView14"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignStart="@+id/textView13" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textColor="@color/background_floating_material_light"
+        android:text="@string/emptyString14"
+        android:ems="10"
+        android:id="@+id/bsereq"
+        android:layout_alignTop="@+id/Luname"
+        android:layout_toEndOf="@+id/Luname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/background_floating_material_light"
+        android:text="@string/ag"
+        android:id="@+id/textView17"
+        android:layout_below="@+id/bcontact"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/background_floating_material_light"
+        android:text="@string/gn"
+        android:id="@+id/textView18"
+        android:layout_above="@+id/Lpass"
+        android:layout_alignEnd="@+id/textView13" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/emptyString22"
+        android:id="@+id/genderTV"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/Lpass"
+        android:layout_toEndOf="@+id/k" />
+
+
+</RelativeLayout>

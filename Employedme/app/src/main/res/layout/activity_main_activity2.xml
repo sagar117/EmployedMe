@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:clickable="false"
+    android:background="#02ff5028"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:textSize="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView22"
+        android:layout_alignBottom="@+id/contactnameTV"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/a"
+        android:textSize="15dp"
+        android:id="@+id/contactnameTV"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/citinm"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="CITY NAME"
+        android:id="@+id/textView23"
+        android:layout_above="@+id/map"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/d"
+        android:textSize="15dp"
+        android:id="@+id/citinm"
+        android:layout_alignTop="@+id/jobnameTV"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Name"
+        android:textSize="15dp"
+        android:id="@+id/textView25"
+        android:layout_below="@+id/textView24"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/b"
+        android:textSize="15dp"
+        android:id="@+id/jobnameTV"
+        android:layout_below="@+id/contactnameTV"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact no."
+        android:textSize="15dp"
+        android:id="@+id/textView24"
+        android:layout_alignBottom="@+id/contactnu"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/c"
+        android:textSize="15dp"
+        android:id="@+id/contactnu"
+        android:layout_below="@+id/citinm"
+        android:layout_alignStart="@+id/citinm"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:onClick="oncall" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="15dp"
+        android:text="Gender"
+        android:id="@+id/textView33" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="New Text"
+        android:id="@+id/gen"
+        android:layout_gravity="center_horizontal" />
+
+    <!--<Button-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Locate in map"-->
+    <!--android:id="@+id/map"-->
+    <!--android:onClick="onvClick"-->
+    <!--android:clickable="true"-->
+    <!--android:layout_below="@+id/jobnameTV"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_marginTop="92dp" />-->
+
+</LinearLayout>

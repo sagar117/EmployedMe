@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ff32ff20">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/background_floating_material_light"
+        android:text="@string/wcm"
+        android:textSize="25dp"
+        android:id="@+id/textView11"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/background_floating_material_light"
+        android:id="@+id/nameTV"
+        android:textSize="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView11"
+        android:textStyle="bold|italic"
+        android:clickable="true"
+        android:onClick="onname"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/textView9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/emptyString5"
+        android:textColor="@color/background_floating_material_light"
+        android:id="@+id/emailTV"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="you can find local job and servant here , we wish that you wll be statisfy by our app if you want any improvement then you can give feedback to us"
+        android:id="@+id/textView9"
+        android:textSize="20dp"
+        android:textColor="#fc0a0504"
+        android:layout_below="@+id/textView11"
+        android:layout_toEndOf="@+id/emailTV"
+        android:layout_marginTop="42dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Job"
+        android:id="@+id/bfjob"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:textColor="#ffff321a" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Give Job"
+        android:id="@+id/bgjob"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onaClick"
+        android:clickable="true"
+        android:textColor="#ffff5028" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kkd"
+        android:id="@+id/textView21"
+        android:textColor="#ffff4b42"
+        android:textSize="25dp"
+        android:layout_marginTop="85dp"
+        android:layout_below="@+id/bfjob"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

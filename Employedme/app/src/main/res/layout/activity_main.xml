@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context=".MainActivity" tools:ignore="MergeRootFrame"
+    android:background="#ff0e006d"
+    android:clickable="false">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/Luname"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/Lpass"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:id="@+id/blogin"
+        android:clickable="true"
+        android:onClick="onButtonClick"
+        android:layout_marginTop="69dp"
+        android:layout_below="@+id/Lpass"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:id="@+id/esignup"
+        android:onClick="onbClick"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/query"
+        android:textColor="@android:color/background_dark"
+        android:layout_alignStart="@+id/query" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Username"
+        android:textColor="@color/background_floating_material_light"
+        android:id="@+id/textView6"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/background_floating_material_light"
+        android:text="@string/Password"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/Luname"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="find job"
+        android:id="@+id/query"
+        android:clickable="true"
+        android:onClick="oncClick"
+        android:layout_marginBottom="131dp"
+        android:layout_above="@+id/esignup"
+        android:layout_centerHorizontal="true"
+        style="@style/Base.TextAppearance.AppCompat.Menu"
+        android:textColor="@android:color/background_dark"
+        android:background="#03ff5028"
+        android:capitalize="words" />
+
+</RelativeLayout>
