@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/a"
+        android:text="@string/contact name"
         android:textSize="15dp"
         android:id="@+id/contactnameTV"
         android:layout_alignParentTop="true"
